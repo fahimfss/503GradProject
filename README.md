@@ -29,10 +29,10 @@ As this project focuses on comparing the training time performance of JAX and Py
 
 I made two individual runs for JAX and two individual runs for PyTorch. Because the results for the runs were almost identical, I did not make any further runs. The results are based on the average training time for SAC neural networks with a batch size of 256. 
 
-| Implementation | Avg training time for Run 1 | Avg training time for Run 2 |
-| --- | --- | --- |
-| JAX | 0.009829s or 9.829ms | 0.009988s or 9.988ms |
-| PyTorch |  0.068393s or 68.393ms | 0.068424s or 68.424ms | 
+| Implementation | Avg training time for Run 1 | Avg training time for Run 2 | Number of training steps for each run|
+| --- | --- | --- | --- |
+| JAX | 0.009829s or 9.829ms | 0.009988s or 9.988ms | 24000 |
+| PyTorch |  0.068393s or 68.393ms | 0.068424s or 68.424ms | 23999 | 
 
 The result shows that, the training time for JAX based SAC implementation is a fraction of the training time for PyTorch based SAC implementation. I conclude that, using JAX based implementations for training RL agents with physical robots will significantly improve the total training time of the agent.  
 
